@@ -325,5 +325,11 @@ namespace StudentAdmForm
                 Logger.Log(LogLevel.Error, $"Exception in textBox2_TextChanged: {ex.Message}");
             }
         }
+
+        private void InfoButton_Click(object sender, EventArgs e)
+        {
+            InfoForm infoForm = new InfoForm();
+            infoForm.Show();
+        }
     }
 }

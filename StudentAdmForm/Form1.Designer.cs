@@ -49,6 +49,7 @@
             this.PhotoLabel = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.InfoButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -68,7 +69,6 @@
             this.textBox1.Size = new System.Drawing.Size(100, 20);
             this.textBox1.TabIndex = 1;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            
             // 
             // label2
             // 
@@ -86,7 +86,6 @@
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 3;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
-            
             // 
             // radioButton1
             // 
@@ -169,7 +168,6 @@
             this.textBox3.Size = new System.Drawing.Size(189, 20);
             this.textBox3.TabIndex = 12;
             this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
-            
             // 
             // textBox4
             // 
@@ -178,7 +176,6 @@
             this.textBox4.Size = new System.Drawing.Size(213, 20);
             this.textBox4.TabIndex = 13;
             this.textBox4.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            
             // 
             // textBox5
             // 
@@ -186,7 +183,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(212, 20);
             this.textBox5.TabIndex = 14;
-            
             // 
             // button1
             // 
@@ -241,12 +237,23 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // StudentAdmissionForm
+            // InfoButton
+            // 
+            this.InfoButton.Location = new System.Drawing.Point(361, 305);
+            this.InfoButton.Name = "InfoButton";
+            this.InfoButton.Size = new System.Drawing.Size(75, 23);
+            this.InfoButton.TabIndex = 20;
+            this.InfoButton.Text = "ShowInfo";
+            this.InfoButton.UseVisualStyleBackColor = true;
+            this.InfoButton.Click += new System.EventHandler(this.InfoButton_Click);
+            // 
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.InfoButton);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.PhotoLabel);
             this.Controls.Add(this.button3);
@@ -267,7 +274,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Name = "StudentAdmissionForm";
+            this.Name = "Form1";
             this.Text = "=";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -296,7 +303,7 @@
         private System.Windows.Forms.Label PhotoLabel;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-
+        private System.Windows.Forms.Button InfoButton;
     }
 }
 
